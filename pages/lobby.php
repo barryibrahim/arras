@@ -1,4 +1,4 @@
-<section id="acceuil">
+<section id="lobby">
 <br/><br/><h1>Acceuil</h1><br/>
     <p>Bienvenue à Arras, joyau des Hauts-de-France <br/>
     Découvrez Arras, une ville au riche patrimoine historique et à l’atmosphère chaleureuse. Célèbre pour ses magnifiques places baroques, son beffroi classé à l’UNESCO et ses souterrains chargés d’histoire, Arras est une destination <br/>

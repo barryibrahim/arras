@@ -20,7 +20,7 @@
     <input type="number" id="nroad" name="nroad" placeholder="Entrez votre numéro de rue:"/><br/><br/>
     <h5>Numéro de telephone :</h5>
     <input type="tel" id="phone" name="phone" placeholder="Entrez votre numéro :"/>
-    <input type="submit" id="submit" name="submit" value="Envoyer ma demande"/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <input type="submit" id="submit" name="submit" value="Envoyer ma demande"/>
 </form>
 
 
@@ -72,7 +72,7 @@ if (isset($_POST['submit'])) {
         $stmt ->bindParam(':nroad',$nroad);
         $stmt ->bindParam(':phone',$phone);
         $stmt ->execute();
-        echo "Vos information ont bien été prisent en compte.<br>";
+        echo "<br/> Vos information ont bien été prisent en compte.";
     }
 
 }

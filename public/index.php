@@ -19,7 +19,7 @@ if ($dbh){
                 break;
             case "monuments":require_once '../pages/monument.php';
                 break;
-            case "event":require_once '../pages/event.php';
+            case "events":require_once '../pages/events.php';
                 break;
             default:require_once '../pages/404.php';
                 break;
