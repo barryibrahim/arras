@@ -15,6 +15,12 @@ if ($dbh){
                 break;
             case "contact":require_once '../pages/contact.php';
                 break;
+            case "history":require_once '../pages/Histoire.php';
+                break;
+            case "monuments":require_once '../pages/Monument.php';
+                break;
+            case "event":require_once '../pages/evenement.php';
+                break;
             default:require_once '../pages/404.php';
                 break;
         }
