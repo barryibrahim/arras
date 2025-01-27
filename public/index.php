@@ -5,7 +5,7 @@ require_once '../DTB/connect.php';
 if ($dbh){
     if (isset($_GET["pages"])) {
         switch ($_GET["pages"]) {
-            case "acceuil":require_once '../pages/acceuil.php';
+            case "lobby":require_once '../pages/lobby.php';
                 break;
             case "legal_mention":require_once '../pages/lm.php';
                 break;
@@ -15,17 +15,17 @@ if ($dbh){
                 break;
             case "contact":require_once '../pages/contact.php';
                 break;
-            case "history":require_once '../pages/Histoire.php';
+            case "history":require_once '../pages/history.php';
                 break;
-            case "monuments":require_once '../pages/Monument.php';
+            case "monuments":require_once '../pages/monument.php';
                 break;
-            case "event":require_once '../pages/evenement.php';
+            case "event":require_once '../pages/event.php';
                 break;
             default:require_once '../pages/404.php';
                 break;
         }
     } else {
-        require_once '../pages/acceuil.php';
+        require_once '../pages/lobby.php';
     }
 } else {echo 'site en maintenance';}
 require_once '../pages/footer.php';
