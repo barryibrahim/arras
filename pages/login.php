@@ -23,19 +23,25 @@ if (isset($_POST["connect"])) {
     } elseif (empty($password)) {
         echo 'entrez votre mot de passe';
     } else {
-        $stmt = $dbh -> prepare("SELECT email, user_password FROM signup WHERE email=:email");
-        $stmt ->bindParam(':email',$email);
-        $stmt ->execute();
-        $list = $stmt->fetchAll();
-        var_dump($list);
-        echo '<br/> mot de passe database = '.$list[0]["user_password"];
-        echo '<br/> mot de passe user = '.$password;
-        if ($list[0]["user_password"]==$password){
-            echo '<br/> connecté en tant que '.$email.'. <br/> mot de passe : '.$password.'.';
-        }else{
+        try{
+            $stmt = $dbh -> prepare("SELECT email, user_password FROM signup WHERE email=:email");
+            $stmt ->bindParam(':email',$email);
+            $stmt ->execute();
+            $list = $stmt->fetch();
+    //        echo '<br/> mot de passe database = '.$list[0]["user_password"];
+    //        echo '<br/> mot de passe user = '.$password;
+            if ($list==false){
+                echo '<br/> votre email ou mot de passe est incorrect';
+            }elseif ($list["user_password"]==$password){
+                echo '<br/> connecté en tant que '.$email.'. <br/> mot de passe : '.$password.'.';
+            }else{
+                echo '<br/> votre email ou mot de passe est incorrect';
+            }
+        } catch (Exception $e){
             echo '<br/> votre email ou mot de passe est incorrect';
         }
         
     }
 }
 ?>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>

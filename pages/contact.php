@@ -49,3 +49,5 @@ if (isset($_POST["send"])) {
         echo '<br/> merci ' . $user_name . ' ' . $user_fname . ' pour votre message.';
     }
 }
+?>   
+<br/><br/><br/><br/><br/><br/><br/><br/>
