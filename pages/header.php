@@ -34,7 +34,7 @@
             <a class="dropdown-item" href="index.php?pages=signup">Inscription</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="index.php?pages=contact">Contact</a>
-            <a class="dropdown-item" href="index.php?pages=liste_contact">Liste des contact</a>
+            <a class="dropdown-item" href="index.php?pages=list_contact">Liste des contact</a>
           </div>
         </li>
       </ul>
