@@ -1,4 +1,4 @@
-<footer class="bg-dark text-white text-center py-3 fixed-bottom">
+<footer class="bg-dark text-white text-center py-3">
     <div class="container">
         <p>© 2025 - Information sur Arras | <a href="index.php?pages=legal_mention" class="text-white">Mentions légales</a></p>
         <p>Suivez-nous :
