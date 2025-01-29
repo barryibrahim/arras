@@ -18,7 +18,6 @@ if (isset($_POST["connect"])) {
     $email = $_POST["email"];
     $password = $_POST["password"];
     
-
     if (empty($email)) {
         echo 'entrez votre email';
     } elseif (empty($password)) {
@@ -29,7 +28,7 @@ if (isset($_POST["connect"])) {
         $stmt ->execute();
         $list = $stmt->fetchAll();
         var_dump($list);
-        echo '<br/> mot de passe dtb = '.$list[0]["user_password"];
+        echo '<br/> mot de passe database = '.$list[0]["user_password"];
         echo '<br/> mot de passe user = '.$password;
         if ($list[0]["user_password"]==$password){
             echo '<br/> connecté en tant que '.$email.'. <br/> mot de passe : '.$password.'.';
