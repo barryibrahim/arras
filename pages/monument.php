@@ -33,8 +33,4 @@
     </p>
     <br/>
 </section>
-<<<<<<< HEAD
-=======
-
-<br/><br/><br/><br/><br/>
->>>>>>> a445ebeb1394facf1ab33bd54aed12490ea71dea
+<br/> <br/><br/><br/><br/><br/><br/>
