@@ -1,6 +1,5 @@
-<?php
-echo "Liste des contacts";
-?>
+<br/><br/><h1>Liste des contacts : </h1><br/>
+
 <table class="table table-hover">
   <thead>
     <tr>
@@ -24,3 +23,4 @@ foreach ($list as $row){
 ?>
   </tbody>
 </table>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
