@@ -21,6 +21,8 @@ if ($dbh){
                 break;
             case "events":require_once '../pages/events.php';
                 break;
+            case "liste_contact":require_once '../pages/liste_contact.php';
+                break;
             default:require_once '../pages/404.php';
                 break;
         }
