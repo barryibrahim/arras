@@ -5,7 +5,7 @@
     <h5>login<h5>
     <input type="text" id=user_login name=user_login placeholder="login :" >
     <h5>mot de passe<h5>
-    <input type="text" id=user_password name=user_password placeholder="mot de passe :" >
+    <input type="password" id=user_password name=user_password placeholder="mot de passe :" >
     <input type="submit" id="send" name="send" value="Se connecter"><br/>
     
 </form>
