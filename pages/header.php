@@ -28,7 +28,7 @@
           <a class="nav-link" href="index.php?pages=events">Evenements</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Autre</a>
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Autre </a>
           <div class="dropdown-menu">
             <a class="dropdown-item" href="index.php?pages=login">Connexion</a>
             <a class="dropdown-item" href="index.php?pages=signup">Inscription</a>

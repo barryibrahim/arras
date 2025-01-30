@@ -1,6 +1,6 @@
 <section id="monuments">
     </br><br/><h1 class="text-center">Monuments et Lieux d'Intérêt</h1><br/>
-    <p class="text-center"><strong>Découvrez les monuments emblématiques. Arras est célèbre pour ses monuments historiques, dont la magnifique place des Héros, bordée de maisons dans un style unique.</strong></p>
+    <p class="text-center"><strong>Découvrez les monuments emblématiques. Arras est célèbre pour ses monuments historiques.</strong></p>
     <br/>
 
     <h3 class="text-center">La Place des Héros :</h3>
