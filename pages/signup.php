@@ -1,5 +1,5 @@
 <form method="POST">
-    <br/><br/><h1>Créaction de votre compte :</h1><br/>
+    <br/><br/><h1>Création de votre compte :</h1><br/>
     <h5>e-mail :</h5>
     <input type="email" id="email" name="email" placeholder="Entrez votre e-mail :"/><br/><br/>
     <h5>Nom :</h5>
@@ -66,7 +66,7 @@ if (isset($_POST['submit'])) {
             $stmt ->execute();
             $list = $stmt->fetch();
             if ($list!==false){
-                echo '<br/> Cet e-mail est dejà utiliser, merci de réessayer avec une autre.';
+                echo '<br/> Cet e-mail est dejà utilisé, merci de réessayer avec un autre.';
             }else{
                 $stmt = $dbh->prepare("INSERT INTO signup (email,user_name,user_fname,user_password,birthdate,city,zip,road,nroad,phone) VALUES (:email,:user_name,:user_fname,:user_password,:birthdate,:city,:zip,:road,:nroad,:phone)");
                 $stmt ->bindParam(':email',$email);

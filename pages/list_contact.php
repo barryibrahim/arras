@@ -1,6 +1,6 @@
 <br/><br/><h1>Liste des contacts : </h1><br/>
 
-<p>Cette page est accesible uniquement pour l'administrateur <br/>
+<p>Cette page est accessible uniquement pour l'administrateur <br/>
 <form method="POST">
     <h5>login<h5>
     <input type="text" id=user_login name=user_login placeholder="login :" >

@@ -1,5 +1,5 @@
 <section id="events">
-    <br/><br/><h1 style="text-align: center;">Evénement culturels</h1><br/>
+    <br/><br/><h1 style="text-align: center;">Evénements culturels</h1><br/>
     <p style="text-align: center;"><strong>Arras acceuil de noumbreux événements, dont le Festival Arras film Festival,le Main Square ainsi que le Marché de Noêl qui attire chaque années des milliers de visiteurs.</strong></p>
     <br/>
     <h3 style="text-align: center;">Le Festival Arras film:</h3>
