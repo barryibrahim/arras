@@ -1,5 +1,5 @@
+<br/><br/><h1>Contactez-nous :</h1><br/>
 <form method="POST">
-    <br/><br/><h1>Contactez-nous :</h1><br/>
     <h5>e-mail :</h5>
     <input type="email" id="email" name="email"placeholder="Entrez votre e-mail :"> <br/><br/>
     <h5>nom :</h5>

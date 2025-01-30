@@ -1,5 +1,5 @@
 <form method="POST">
-    <br/><br/><h1>Connection :</h1><br/>
+    <br/><br/><h1>Connexion :</h1><br/>
     <h5>e-mail :</h5>
     <input type="email" id="email" name="email" placeholder="Entrez votre e-mail :"><br/><br/>
     <h5>password :</h5>
