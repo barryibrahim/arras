@@ -60,19 +60,31 @@ if (isset($_POST['submit'])) {
     } elseif (empty($phone)) {
         echo "Vous devez mettre votre numéro";
     } else {
-        $stmt = $dbh->prepare("INSERT INTO signup (email,user_name,user_fname,user_password,birthdate,city,zip,road,nroad,phone) VALUES (:email,:user_name,:user_fname,:user_password,:birthdate,:city,:zip,:road,:nroad,:phone)");
-        $stmt ->bindParam(':email',$email);
-        $stmt ->bindParam(':user_name',$user_name);
-        $stmt ->bindParam(':user_fname',$user_fname);
-        $stmt ->bindParam(':user_password',$user_password);
-        $stmt ->bindParam(':birthdate',$birthdate);
-        $stmt ->bindParam(':city',$city);
-        $stmt ->bindParam(':zip',$zip);
-        $stmt ->bindParam(':road',$road);
-        $stmt ->bindParam(':nroad',$nroad);
-        $stmt ->bindParam(':phone',$phone);
-        $stmt ->execute();
-        echo "<br/> Vos information ont bien été prisent en compte.";
+        try{
+            $stmt = $dbh -> prepare("SELECT email FROM signup WHERE email=:email");
+            $stmt ->bindParam(':email',$email);
+            $stmt ->execute();
+            $list = $stmt->fetch();
+            if ($list!==false){
+                echo '<br/> Cet e-mail est dejà utiliser, merci de réessayer avec une autre.';
+            }else{
+                $stmt = $dbh->prepare("INSERT INTO signup (email,user_name,user_fname,user_password,birthdate,city,zip,road,nroad,phone) VALUES (:email,:user_name,:user_fname,:user_password,:birthdate,:city,:zip,:road,:nroad,:phone)");
+                $stmt ->bindParam(':email',$email);
+                $stmt ->bindParam(':user_name',$user_name);
+                $stmt ->bindParam(':user_fname',$user_fname);
+                $stmt ->bindParam(':user_password',$user_password);
+                $stmt ->bindParam(':birthdate',$birthdate);
+                $stmt ->bindParam(':city',$city);
+                $stmt ->bindParam(':zip',$zip);
+                $stmt ->bindParam(':road',$road);
+                $stmt ->bindParam(':nroad',$nroad);
+                $stmt ->bindParam(':phone',$phone);
+                $stmt ->execute();
+                echo "<br/>Vos information ont bien été prisent en compte.";
+            }
+        } catch (Exception $e){
+                echo 'Problème de connexion avec notre base de donnée. Essayez plus tard.';
+        }
     }
 
 }
