@@ -1,6 +1,6 @@
 <section id="history" style="text-align: center; line-height: 1.5;">
     <br/><br/>
-    <h1>Histoire de la ville</h1>
+    <h1>Histoire de la ville de ville</h1>
     <br/>
     <p><strong>Arras, située dans le Pas-de-Calais, possède une histoire riche marquée par des événements clés et des périodes de prospérité et de conflits.</strong></p>
     <br/>
